@@ -1,0 +1,15 @@
+@import "reset";
+@import "variables";
+@import "mixins";
+@import "ui";
+
+.wrapper {
+    max-width: $maxWidth + px;
+    margin: auto;
+    padding: 0px 20px;
+}
+
+.container {
+    max-width: $minWidth + px;
+    margin: auto;
+}
