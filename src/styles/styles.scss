@@ -4,12 +4,27 @@
 @import "ui";
 
 .wrapper {
+    display: flex;
+    flex-direction: column;
     max-width: $maxWidth + px;
-    margin: auto;
-    padding: 0px 20px;
+    min-width: 100%;
+    min-height: 100%;
 }
 
 .container {
     max-width: $minWidth + px;
     margin: auto;
+    padding: 0px 20px;
+}
+
+#__next {
+    min-height: 100%;
+}
+
+main {
+    flex: 1 1 auto;
+}
+
+footer {
+    flex-shrink: 0;
 }

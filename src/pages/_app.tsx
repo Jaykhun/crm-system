@@ -9,9 +9,9 @@ const poppins = Poppins({
 
 const App = ({ Component, pageProps }: AppProps) => {
   return (
-    <main className={poppins.className}>
+    <div className={poppins.className}>
       <Component {...pageProps}/>
-    </main>
+    </div>
   )
 }
 
