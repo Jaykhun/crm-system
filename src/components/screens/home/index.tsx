@@ -1,10 +1,12 @@
-import Layout from '@/src/components/layout'
-import styles from './styles.module.scss'
+import Layout from '@/components/layout'
+import Intro from '@/screens/home/components/intro'
+import Proces from '@/screens/home/components/process'
 
 const Home = () => {
   return (
     <Layout>
-      <div className={styles.asd}></div>
+      <Intro/>
+      <Proces/>
     </Layout>
   )
 }

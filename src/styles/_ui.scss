@@ -1,1 +1,15 @@
 @import "variables";
+@import "mixins";
+
+%title {
+    @include adaptivFont(48, 38);
+    color: $titleColor;
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+%subtitle{
+    @include adaptivFont(22, 20);
+    font-weight: 600;
+    color: $primaryColor;
+}

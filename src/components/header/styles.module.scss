@@ -36,33 +36,21 @@
 
 .form {
     @include flex(space-between, center, $gap: 16px);
-    a {
+
+    &__login {
+        background: $tertiaryBgColor;
+        color: $primaryColor;
         border-radius: 50px;
         padding: 0.75rem 2.25rem;
         border: 1px solid transparent;
         font-weight: 400;
         text-transform: capitalize;
         text-align: center;
-    }
-
-    &__login {
-        background: $tertiaryBgColor;
-        color: $primaryColor;
         transition: all 0.3s ease-in-out;
+
         &:hover {
             background: $primaryBgColor;
             color: $tertiaryColor;
-        }
-    }
-
-    &__book {
-        flex: 0 0 250px;
-        background: $primaryBgColor;
-        color: $tertiaryColor;
-        transition: all 0.3s ease-in;
-        &:hover {
-            background: $tertiaryBgColor;
-            color: $primaryColor;
         }
     }
 }
@@ -106,6 +94,7 @@
             display: block;
             width: 28px;
             height: 28px;
+            margin-top: -20px;
             span {
                 display: inline-block;
                 width: 100%;
@@ -142,7 +131,7 @@
                     visibility: hidden;
                     transition: all 0.1s ease !important;
                 }
-                
+
                 &::after {
                     top: 0 !important;
                     transform: rotate(-90deg);

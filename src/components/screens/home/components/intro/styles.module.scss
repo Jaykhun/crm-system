@@ -1,0 +1,54 @@
+@import "@/styles/mixins";
+@import "@/styles/variables";
+@import "@/styles/ui";
+
+.intro {
+    &__inner {
+        padding-top: 80px;
+        @include flex(space-between, center, $gap: 20px);
+    }
+
+    &__title {
+        @extend %title;
+        margin-bottom: 48px;
+    }
+
+    &__subtitle {
+        @extend %subtitle;
+        margin-bottom: 16px;
+    }
+
+    &__banner {
+        flex: 0 0 50%;
+        text-align: right;
+    }
+
+    &__img {
+        flex: 0 0 50%;
+    }
+}
+
+@media (max-width: 1000px) {
+    .intro {
+        &__inner {
+            padding-top: 40px;
+            flex-direction: column-reverse;
+        }
+
+        &__banner {
+            text-align: center;
+        }
+
+        &__img {
+            margin-bottom: 10px;
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    .intro {
+        &__inner {
+            padding-top: 0px;
+        }
+    }
+}

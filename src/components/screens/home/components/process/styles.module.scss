@@ -1,0 +1,89 @@
+@import "@/styles/mixins";
+@import "@/styles/variables";
+@import "@/styles/ui";
+
+.process {
+    background-color: $bigContentBg;
+    margin-top: 100px;
+    &__inner {
+        padding: 100px 0px;
+    }
+
+    &__title {
+        @extend %title;
+        text-align: center;
+    }
+
+    &__subtitle {
+        @extend %subtitle;
+        text-align: center;
+    }
+
+    &__content {
+        @include flex(space-between);
+        margin-top: 40px;
+    }
+}
+
+.item {
+    border-radius: 0 0 50px 0;
+    box-shadow: 0 5px 15px #d7dee8;
+    background-color: #fff;
+    padding: 40px;
+    flex: 0 0 32%;
+    &__number {
+        font-size: 100px;
+        font-weight: 700;
+        line-height: 85px;
+        text-transform: capitalize;
+        color: #fff;
+        -webkit-text-stroke: 6px transparent;
+        background: $primaryBgColor;
+        background-clip: text;
+        background-size: cover;
+        margin-bottom: 1rem;
+    }
+
+    &__title {
+        @include adaptivFont(22, 20);
+        font-weight: 500;
+        line-height: 1.2;
+        margin-bottom: 0.5rem;
+    }
+
+    &__txt {
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 25.6px;
+        color: $textColor;
+    }
+}
+
+
+@media (max-width: 1000px) {
+    .process{
+        &__content{
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    }
+
+    .item{
+        flex: 0 0 46%;
+        margin: 0px 20px 40px 0px;
+    }
+}
+
+@media (max-width: 650px) {
+    .process{
+        margin-top: 50px;
+        &__inner{
+            padding: 40px 0px;
+        }
+    }
+
+    .item{
+        flex: 1 1 auto;
+        margin: 0px 20px 40px 0px;
+    }
+}

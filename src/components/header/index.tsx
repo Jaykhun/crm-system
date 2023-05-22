@@ -1,3 +1,4 @@
+import Button from '@/components/ui/button'
 import logoPath from '@/public/images/logo.png'
 import clsx from 'clsx'
 import Image from 'next/image'
@@ -34,7 +35,7 @@ const Header = () => {
 
             <div className={styles.form}>
               <Link href="login" className={styles.form__login}>Login</Link>
-              <Link href="book" className={styles.form__book}>Book an appointment</Link>
+              <Button path='book'>Book an appointment</Button>
             </div>
           </div>
         </div>
