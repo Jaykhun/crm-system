@@ -30,21 +30,38 @@
 
     &__menu {
         li {
-            margin-bottom: 8px;
+            margin-bottom: 10px;
         }
     }
 
     &__email {
-        font-size: 18px;
-        font-weight: 300;
-        height: 60px;
-        padding: 15px 30px;
-        border: 1px solid #fff;
+        @include flex(space-between, center);
         border-radius: 10px;
-        background-color: transparent;
-        color: #fff;
-        &::-webkit-input-placeholder {
+
+        input {
+            font-size: 18px;
+            font-weight: 300;
+            height: 60px;
+            padding: 15px 30px;
+            border: 1px solid #fff;
+            background-color: transparent;
             color: #fff;
+            &::-webkit-input-placeholder {
+                color: #fff;
+            }
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+
+        button {
+            display: block;
+            width: 60px;
+            height: 60px;
+            border-radius: 10px;
+            background-color: #fff;
+            padding: 20px;
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
         }
     }
 
@@ -57,6 +74,22 @@
     }
 }
 
+.contacts {
+    &__links {
+        @include flex(space-between, center, $gap: 10px);
+        margin-bottom: 20px;
+    }
+
+    &__icon {
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        background-color: #fff;
+        border-radius: 10px;
+        padding: 10px;
+    }
+}
+
 @media (max-width: 800px) {
     .footer {
         &__inner {
@@ -64,7 +97,7 @@
             gap: 20px;
         }
 
-        &__title{
+        &__title {
             font-size: 20px;
         }
 
@@ -89,11 +122,24 @@
     }
 }
 
-
 @media (max-width: 365px) {
     .footer {
-        &__title{
+        padding-top: 30px;
+        &__title {
             margin-bottom: 15px;
+        }
+
+        &__email {
+            input {
+                height: 55px;
+                padding: 10px 15px;
+            }
+
+            button {
+                width: 45px;
+                height: 55px;
+                padding: 13px;
+            }
         }
 
         &__subscribe {

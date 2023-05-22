@@ -13,14 +13,14 @@ const Header = () => {
     <header className={styles.header}>
       <div className='container'>
         <div className={styles.header__body}>
-          <div className={styles.header__img}>
+          <Link href='/' className={styles.header__img}>
             <Image
               src={logoPath}
               alt='logo'
               width={80}
               height={80}
             />
-          </div>
+          </Link>
 
           <div className={styles.menu__toggle}>
             <span
