@@ -1,0 +1,30 @@
+@import "@/styles/mixins";
+@import "@/styles/variables";
+@import "@/styles/ui";
+
+.services {
+    &__inner {
+        @include flex(space-between, center, $gap: 20px);
+        padding-bottom: 100px;
+    }
+
+    &__title {
+        @extend %title;
+        margin-bottom: 16px;
+    }
+
+    &__subtitle {
+        @extend %subtitle;
+        margin-bottom: 16px;
+    }
+
+    &__txt {
+        color: $textColor;
+        margin-bottom: 32px;
+        font-weight: 300;
+    }
+
+    &__content {
+        flex: 0 0 40%;
+    }
+}

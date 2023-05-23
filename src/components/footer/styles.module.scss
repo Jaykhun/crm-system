@@ -1,5 +1,6 @@
 @import "@/styles/mixins";
 @import "@/styles/variables";
+@import "@/styles/ui";
 
 .footer {
     background: $primaryBgColor;
@@ -39,29 +40,23 @@
         border-radius: 10px;
 
         input {
-            font-size: 18px;
-            font-weight: 300;
-            height: 60px;
-            padding: 15px 30px;
-            border: 1px solid #fff;
-            background-color: transparent;
-            color: #fff;
-            &::-webkit-input-placeholder {
-                color: #fff;
-            }
+            @extend %input-styles;
             border-top-right-radius: 0;
             border-bottom-right-radius: 0;
         }
 
         button {
             display: block;
-            width: 60px;
-            height: 60px;
+            width: 53px;
+            height: 53px;
             border-radius: 10px;
             background-color: #fff;
             padding: 20px;
             border-top-left-radius: 0;
             border-bottom-left-radius: 0;
+            img {
+                transform: scale(1.5);
+            }
         }
     }
 
@@ -130,15 +125,13 @@
         }
 
         &__email {
-            input {
-                height: 55px;
-                padding: 10px 15px;
-            }
-
             button {
                 width: 45px;
                 height: 55px;
                 padding: 13px;
+                img{
+                    transform: scale(1);
+                }
             }
         }
 

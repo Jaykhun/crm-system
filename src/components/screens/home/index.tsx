@@ -1,12 +1,17 @@
+import Appointment from '@/components/appointment'
 import Layout from '@/components/layout'
-import Intro from '@/screens/home/components/intro'
-import Proces from '@/screens/home/components/process'
+import Intro from './components/intro'
+import Proces from './components/process'
+import Services from './components/services'
+
 
 const Home = () => {
   return (
     <Layout>
-      <Intro/>
-      <Proces/>
+      <Intro />
+      <Proces />
+      <Appointment />
+      <Services />
     </Layout>
   )
 }

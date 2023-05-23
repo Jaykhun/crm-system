@@ -1,0 +1,90 @@
+@import "@/styles/mixins";
+@import "@/styles/variables";
+
+.ant-select {
+    width: 100%;
+    &-selector {
+        background: transparent !important;
+        height: 55px !important;
+        padding: 10px !important;
+        border-color: #fff !important;
+        font-size: 18px !important;
+        border-radius: 10px !important;
+    }
+
+    &-arrow {
+        color: #fff !important;
+    }
+}
+
+.ant-select-selection {
+    &-placeholder {
+        color: #fff !important;
+        font-family: inherit;
+        &::after {
+            color: #fff !important;
+        }
+    }
+}
+
+.ant-picker {
+    width: 100%;
+    background-color: transparent;
+    padding: 10px !important;
+    height: 55px !important;
+    border-color: #fff !important;
+    border-radius: 10px !important;
+
+    &-input {
+        input {
+            color: #fff !important;
+            font-size: 18px !important;
+            cursor: pointer !important;
+
+            &::placeholder {
+                color: #fff !important;
+            }
+        }
+    }
+
+    &-suffix {
+        color: #fff !important;
+    }
+
+    &-content{
+        th{
+            font-weight: 700 !important;
+            color: $primaryColor;
+        }
+    }
+
+    &-clear {
+        color: $primaryColor !important;
+        border-radius: 50% !important;
+        transform: scale(1.5) translateY(-5px) !important;
+    }
+
+    &-cell-inner {
+        border-color: transparent;
+        color: #000 !important;
+        &::before {
+            border-color: $primaryColor !important;
+        }
+    }
+
+    &-cell-selected {
+        .ant-picker-cell-inner {
+            background-color: $primaryColor !important;
+        }
+    }
+
+    &-today-btn {
+        color: $primaryColor !important;
+        font-weight: 700;
+    }
+
+    &-header-view {
+        color: $primaryColor !important;
+        font-weight: 700;
+    }
+}

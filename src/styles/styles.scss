@@ -3,6 +3,9 @@
 @import "mixins";
 @import "ui";
 
+@import "customized/form";
+
+
 .wrapper {
     display: flex;
     flex-direction: column;
