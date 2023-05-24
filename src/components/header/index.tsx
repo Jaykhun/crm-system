@@ -35,7 +35,7 @@ const Header = () => {
             <Menu />
 
             <div className={styles.form}>
-              <Link href="login" className={styles.form__login}>Login</Link>
+              <Link href="registration" className={styles.form__login}>Login</Link>
               <Button path='book'>Book an appointment</Button>
             </div>
           </div>

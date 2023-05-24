@@ -36,6 +36,10 @@ input[type="radio"] {
     display: none;
 }
 
+button {
+    cursor: pointer;
+}
+
 textarea {
     resize: none;
     overflow: auto;

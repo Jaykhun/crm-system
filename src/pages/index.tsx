@@ -1,4 +1,4 @@
-import Home from '@/components/screens/home'
+import Home from '@/screens/home'
 
 const HomePage = () => {
   return (
