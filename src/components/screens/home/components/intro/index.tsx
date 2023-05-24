@@ -4,7 +4,7 @@ import Image from 'next/image'
 import styles from './styles.module.scss'
 
 const Intro = () => {
-    return (    
+    return (
         <div className={styles.intro}>
             <div className='container'>
                 <div className={styles.intro__inner}>
@@ -26,6 +26,7 @@ const Intro = () => {
                             width={620}
                             height={470}
                             alt='intro-banner'
+                            priority
                         />
                     </div>
                 </div>

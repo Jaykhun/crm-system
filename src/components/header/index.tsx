@@ -20,6 +20,7 @@ const Header = () => {
               alt='logo'
               width={80}
               height={80}
+              priority
             />
           </Link>
 

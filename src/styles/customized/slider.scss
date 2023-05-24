@@ -1,0 +1,32 @@
+@import "@/styles/mixins";
+@import "@/styles/variables";
+@import "@/styles/ui";
+
+.swiper {
+    position: static;
+    &-button-prev,
+    &-button-next {
+        color: #fff !important;
+        background: $primaryBgColor;
+        border-radius: 50%;
+        box-shadow: 0 5px 15px #d7dee8;
+        padding: 40px;
+        transform: scale(0.6);
+    }
+
+    &-button-prev {
+        left: -16px !important;
+    }
+
+    &-button-next {
+        right: -16px !important;
+    }
+
+    &-pagination-bullet-active {
+        background-color: $primaryColor !important;
+    }
+}
+
+.swiper-container{
+    overflow: hidden !important;
+}
