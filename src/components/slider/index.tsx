@@ -17,13 +17,14 @@ const Slider = ({ children }: SliderProps) => {
             <Swiper
                 modules={[Navigation, Pagination]}
                 slidesPerView={1}
-                slidesPerGroup={2}
+                slidesPerGroup={1}
                 navigation
                 pagination={{ clickable: true, dynamicBullets: true }}
                 className='swiper'
                 breakpoints={{
                     650: {
-                        slidesPerView: 2
+                        slidesPerView: 2,
+                        slidesPerGroup: 1
                     }
                 }}
             >

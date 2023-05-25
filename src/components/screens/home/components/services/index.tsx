@@ -32,7 +32,7 @@ const Services = () => {
                                                     height={90}
                                                 />
                                             </div>
-                                            <div className={styles.slider__title}>full mouth rehabilitation</div>
+                                            <div className={styles.slider__title}> {_}full mouth rehabilitation</div>
                                             <div className={styles.slider__txt}>full mouth rehabilitation</div>
                                         </div>
                                     </SwiperSlide>

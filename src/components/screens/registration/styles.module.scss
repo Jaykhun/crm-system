@@ -98,3 +98,17 @@
         }
     }
 }
+
+@media (max-width: 400px) {
+    .registration{
+        &__body{
+            padding: 30px 24px;
+        }
+    }
+    .form {
+        &__question {
+            flex-direction: column;
+            gap: 1px;
+        }
+    }
+}
