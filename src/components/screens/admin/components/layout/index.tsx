@@ -18,7 +18,7 @@ const Dashboard = ({ children }: DashboardProps) => {
                     <Layout.Content
                         style={{
                             margin: '24px 16px',
-                            padding: 24,
+                            padding: 30,
                             minHeight: 280,
                         }}
                     >

@@ -7,14 +7,18 @@ import styles from './styles.module.scss'
 const SideBar = () => {
     const { sidebarMenuState, toggle } = useAdminMenu()
     return (
-        <Layout.Sider trigger={null} collapsible collapsed={sidebarMenuState}>
+        <Layout.Sider
+            trigger={null} collapsible
+            collapsed={sidebarMenuState}
+            style={{ overflow: "auto", height: '100vh', padding: "20px 10px" }}
+        >
             <Logo className={styles.logo} />
             <div className="demo-logo-vertical" />
             <Menu
                 theme="dark"
                 mode="inline"
                 defaultSelectedKeys={['1']}
-                style={{ fontSize: '17px' }}
+                style={{ fontSize: '17px', overflow: "auto" }}
                 items={[
                     {
                         key: '1',
