@@ -21,7 +21,7 @@
       "@/pages/*": ["src/pages/*"],
       "@/styles/*": ["src/styles/*"],
       "@/screens/*": ["src/components/screens/*"],
-
+      "@/admin/*": ["src/components/screens/admin/*"],
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],

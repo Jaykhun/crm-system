@@ -7,7 +7,7 @@ const Admin = () => {
         <Meta title='Admin Panel'>
             <Dashboard>
                 <div className={styles.admin}>
-
+                    
                 </div>
             </Dashboard>
         </Meta>
